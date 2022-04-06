@@ -19,6 +19,14 @@ class Program
             {
                 SecondNameList[i] = Console.ReadLine();
             }
+            for (int i = 0; i < 5; i++)
+            { 
+                for (int j = 1; j < 5; j++)
+                {
+                    if (SecondNameList[i] == SecondNameList[j]) throw new MyException1("введены две одинаковые фамилии");
+                }
+            }
+
         }
         catch (Exception ex) 
         { 

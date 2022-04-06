@@ -20,10 +20,7 @@ namespace _9_2
     }
     class MyException1 : Exception
     {
-        public string  FirstSuname { get; set; }
-        public string SecondSuname { get; set; }
-
-
+ 
         public MyException1 (string massege )
         {
             Console.WriteLine (massege);
